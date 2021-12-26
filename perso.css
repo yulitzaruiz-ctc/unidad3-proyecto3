@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: tit;
+    src: url(Astral\ Sisters.ttf);
+}
+
+body {
+    background-image: linear-gradient(135deg, #a40bf7, #e0bad9, #530ff1);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.section-header {
+    background: black;
+    height: 380px;
+    position: relative;
+    width: 100%;
+}
+
+.header-background {
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 42%;
+    opacity: .5;
+    width: 100%;
+}
+
+.header-container {
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    padding: 0 90px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.header-container>* {
+    margin-bottom: 8px;
+    font-size: 90px;
+    font-family: tit;
+}
+
+.header-container .header-description {
+    width: 60%;
+}
+
+.header-social-medias {
+    display: flex;
+}
+
+.header-social-medias li {
+    list-style: none;
+    margin-right: 12px;
+}
+
+.header-social-medias li a {
+    align-items: center;
+    background: #0a3470;
+    border-radius: 8px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    text-decoration: none;
+    width: 40px;
+}
+
+.header-social-medias li a:hover {
+    background: #e4b1d2;
+}
+
+.fab {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/*MAIN*/
+
+.cards-content {
+    padding: 30px 60px 80px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(220px, 300px));
+    grid-template-rows: auto;
+    gap: 18px;
+    justify-content: center;
+}
+
+.card-item {
+    border-radius: 22px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-item .information-overflow {
+    background: rgba(2, 85, 81, 0.86);
+    bottom: 0;
+    color: #fff;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.card-item:hover .information-overflow {
+    display: flex;
+}
+
+.card-item:hover .bagde-dimension {
+    display: none;
+}
+
+.card-item .information-container>* {
+    margin-bottom: 8px;
+}
+
+.information-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.information-status {
+    border-radius: 4px;
+    padding: 1px;
+    text-align: center;
+    width: 80px;
+}
+
+.information-status.alive {
+    background: #1fbf1f;
+}
+
+.information-status.dead {
+    background: #910202;
+}
+
+.information-status.unknown {
+    background: #0a3470;
+}
+
+.bagde-dimension {
+    background: #cf159b;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    left: 10px;
+    letter-spacing: 1px;
+    padding: 4px 14px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    text-transform: capitalize;
+}
+
+@keyframes fanimado {
+    
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}

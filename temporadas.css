@@ -1,0 +1,250 @@
+@font-face {
+    font-family: tit;
+    src: url(Astral\ Sisters.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: url(https://www.fondoshd.mx/descargar.php?id=4499&resolucion=1920x1080);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    margin: auto;
+    background-size: 200%;
+    animation: movimiento 5s infinite linear alternate;
+    
+}
+@keyframes movimiento{
+    from{
+      background-position:bottom left ;
+    }
+    to{
+        background-position: top right;
+    }
+}
+
+
+img{
+    max-width: 100%;
+}
+h1{
+    font-size: 650%;
+    text-align: center;
+    font-family: tit;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    color: white;
+}
+h2{
+    font-size: 500%;
+    text-align: center;
+    font-family: tit;
+    margin: 15px 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+.volver{
+    float: left; 
+}
+
+.blog{
+    padding: 100px 200px;
+    margin: 100px;
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 3%;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.flex{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-child{
+    width: 320px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+.info{
+    padding: 15px;
+    background: #fff;
+    text-align: justify;
+    height: 200px;
+}
+
+nav{
+    /*outline: 1px solid blueviolet;*/
+}
+ul{
+    /*outline: 1px solid blue;*/
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+    background-color: #14131d;
+    line-height: 40px;
+    overflow: auto;
+}
+li{
+    /*outline: 1px solid greenyellow;*/
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+
+}
+a{
+    /*outline: 1px solid hotpink;*/
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+a:hover {
+    background-color: #ceee42;
+    color: #000;
+
+}
+
+.a1{
+    color: red;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 50px;
+}
+.a2{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-right: 10%;
+    margin-left: 0%;
+    width: 150px;
+}
+
+
+.caja1 th{
+    background-color: rgb(236, 240, 39);
+}
+.caja1 h4{
+    background-color: rgb(236, 240, 39);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin-top: 0%;
+}
+.caja1{
+    float: left;
+    width: 45%;
+    height: 470px;
+    text-align: center;
+    margin-left: 50px;
+}
+.caja2 th{
+    background-color: rgb(162, 40, 167);
+}
+.caja2 h4{
+    background-color: rgb(162, 40, 167);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin-top: 0%;
+}
+.caja2{
+    float: left;
+    width: 45%;
+    height: 470px;
+    text-align: center;
+    margin-left: 50px;
+}
+.caja3 th{
+    background-color: rgb(226, 166, 53);
+}
+.caja3 h4{
+    background-color: rgb(226, 166, 53);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin-top: 0%;
+}
+.caja3{
+    margin-top: 5%;
+    float: left;
+    width: 45%;
+    height: 470px;
+    text-align: center;
+    margin-left: 50px;
+}
+.caja4 th{
+    background-color: rgb(21, 116, 61);
+}
+.caja4 h4{
+    background-color: rgb(21, 116, 61);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin-top: 0%;
+}
+.caja4{
+    margin-top: 5%;
+    float: left;
+    width: 45%;
+    height: 470px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.caja5 th{
+    background-color: rgb(202, 42, 42);
+}
+.caja5 h4{
+    background-color: rgb(202, 42, 42);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin-top: 0%;
+}
+.caja5{
+    margin-top: 5%;
+    float: left;
+    width: 45%;
+    height: 470px;
+    text-align: center;
+    margin-left: 27%;
+}
+
+
+table{
+    background-color: black;
+}
+
+td{
+    background-color: whitesmoke;
+    border: 2px solid rgb(255, 252, 252);
+}
+@keyframes fanimado {
+    
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}

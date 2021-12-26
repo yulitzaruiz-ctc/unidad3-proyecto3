@@ -1,0 +1,86 @@
+@font-face {
+    font-family: tu;
+    src: url(Hey\ Haters.ttf);
+}
+
+body{
+    margin: auto;
+    background-color:rgb(183, 177, 184);;
+    max-width: 85%;
+    
+}
+
+
+h1{
+    background: url(https://preview.redd.it/p0oaac9d14z31.jpg?auto=webp&s=7e5433c7510ce532e84e75c221ad3f67f4eb3126);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    margin: auto;
+    background-size: 200%;
+    animation: movimiento 5s infinite linear alternate;}
+
+@keyframes movimiento{
+        from{
+          background-position:bottom left ;
+        }
+        to{
+            background-position: top right;
+        }
+    }
+h1{
+    font-size: 60px;
+    font-family: tu;
+    height: 100px;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    color: ivory;
+    padding: 40px;
+}
+p{
+    color: rgb(10, 10, 10);
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    top: 10px;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    float: top; 
+    
+}
+.boton {
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgb(12, 12, 12);
+    font-weight: 800;
+    display: block;
+    padding: 5px 20px;
+    margin: 15px auto;
+    width: 17%;
+    background-color: rgba(255, 255, 255, 0);
+}
+img{
+    margin: auto;
+    width: 160px;
+    height: 165px;
+}
+a{
+    /*outline: 1px solid hotpink;*/
+    text-decoration: none;
+    background: #37343fb6;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+}
+a:hover {
+    background: #9E16BA;
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Productos Rick and Morty </title>
+    <link rel="stylesheet" href="productoR.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+
+    <h1 class="titulo"> PRODUCTOS RICK AND MORTY </h1>
+
+<!-- Para el pago -->
+
+<div class="siderbar_nav">
+
+    <h5 class="subtitulo"> <i class="fa fa-money" aria-hidden="true"></i> ¡ES HORA DE CANCELAR TU(S) PRODUCTOS! </h5>
+    <p> Completa todos los datos y selecciona la tienda donde recogeras el producto</p>
+    
+    <input id="producto" placeholder="digite un producto" type="texto" class="from-control">
+    <br>
+    <br>
+    <button onclick="agregar()" class="btn btn-info"><i class="fa fa-shopping-cart" aria-hidden="true"> Añadir al carrito </i></button>
+    <button onclick="eliminar()" class="btn btn-danger"><i class="fa fa-cart-arrow-down" aria-hidden="true"> Eliminar del carrito </i></button>
+    
+     <hr>
+     <h3> LISTADO DE PRODUCTOS</h3>
+     <div id="listado"></div>
+     <hr>
+    
+     <h4> TOTAL DE PRODUCTOS</h4>
+     <div style="font-size: 25px;" id="contador">
+     </div>
+     <hr>
+
+     <br>
+
+     <div class="form-container">
+        <div class="field-container">
+            <i class="fa fa-credit-card" aria-hidden="true"><label for="numero-tarjeta">Número de tu tarjeta</label></i>
+            <br>
+            <br>
+            <input id="numero-tarjeta" type="text" pattern="[0-9]*" inputmode="numeric">
+            <p id="alerta"></p>
+            <button type="button" id="btn-validar">VALIDAR</button>
+        </div>
+    </div>
+    <br>
+
+    <button type="button" id="btn-comprar"> COMPRAR </button>
+
+</div>
+
+
+<!-- PRODUCTOS -->
+
+
+<br>
+<h2 class="subtitulo1"> VASOS   A   S/. 35.00</h2>
+
+    
+    <div class="botones">
+        <div class="boton">
+            <img src="https://m.media-amazon.com/images/I/51BKm+9SIcL._AC_SX425_.jpg" alt="imagen "> 
+           <h3 class="parra"> Vaso de pinta </h3> 
+        </div>
+    </div>
+     
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/612KsNQPaCL._AC_SL1500_.jpg" alt="imagen del pokemon grookey">
+           <h3 class="parra"> Vaso de chupito</h3>
+        </div>
+    </div>
+
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/61IZ6KgtmmL._AC_SX522_.jpg" alt="imagen ">
+           <h3 class="parra"> Vaso de cerveza </h3>
+        </div>
+    </div>
+       
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://www.merchandisingplaza.es/293542/2/Vasos-Rick-and-Morty-Vaso-Rick-and-Morty-293542-l.jpg" alt="imagen ">
+           <h3 class="parra"> Vaso de jugo</h3>
+        </div>
+    </div>
+
+<br>
+    <h2 class="subtitulo1"> CUADROS  A  S/. 60.00</h2>
+
+
+    <div class="botones">
+
+        <div class="boton">
+           <img src="https://images-na.ssl-images-amazon.com/images/I/71nitRD1r7L._AC_SX679_.jpg" alt="imagen ">
+           <h3 class="parra"> Para sala </h3>
+        </div>
+    </div>
+
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/611vnzVx0xL._AC_UL320_.jpg" alt="imagen ">
+           <h3 class="parra"> Para living </h3>
+        </div>
+    </div>
+
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://images-eu.ssl-images-amazon.com/images/I/51Yb9DzK-zL.jpg" alt="imagen">
+           <h3 class="parra"> Para dormitorio </h3>
+        </div>
+    </div>
+
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/81e5zgffsNL._AC_SX425_.jpg" alt="imagen">
+           <h3 class="parra"> Para cuarto de estudio </h3>
+        </div>
+    </div>
+
+<br>
+    <h2 class="subtitulo1"> POSTERS  A  S/. 35.00</h2>
+
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/51MTneV76ML._AC_.jpg" alt="imagen">
+           <h3 class="parra"> Para hogar y cocina </h3>
+        </div>
+    </div>
+
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/51yFLzVCnFL._AC_SY450_.jpg" alt="imagen">
+           <h3 class="parra"> Para televisión </h3>
+        </div>
+    </div>
+
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/61abQFieCGL._AC_SY741_.jpg" alt="imagen">
+           <h3 class="parra"> R&M Wars </h3>
+        </div>
+    </div>
+
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/81dH1faXr7L._AC_SY741_.jpg" alt="imagen">
+           <h3 class="parra"> Trends International  </h3>
+        </div>
+    </div>
+
+
+<br>
+    <h2 class="subtitulo1"> FUNDAS  A  S/. 50.00 </h2>
+
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/717y2qDaZIL._AC_SY550_.jpg" alt="imagen">
+           <h3 class="parra"> Iphone 11 </h3>
+        </div>
+    </div>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/51SVe3UkaAL._AC_SX466_.jpg" alt="imagen">
+           <h3 class="parra"> Samsung </h3>
+        </div>
+    </div>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/61lPhqB6G4L._AC_SX425_.jpg" alt="imagen">
+           <h3 class="parra"> ZTE </h3>
+        </div>
+    </div>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://http2.mlstatic.com/D_NQ_NP_878137-MLM45789574588_052021-V.jpg" alt="imagen">
+           <h3 class="parra"> LG </h3>
+        </div>
+    </div>
+
+<br>
+    <h2 class="subtitulo1"> LAMPARAS  A  S/. 110.00 </h2>
+
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/61JGrvAE-cL._AC_SX522_.jpg" alt="imagen">
+           <h3 class="parra"> Ilusión noche </h3>
+        </div>
+    </div>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/6173F88WjDL._AC_UL320_.jpg" alt="imagen">
+           <h3 class="parra"> Ilusión youping </h3>
+        </div>
+    </div>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/61gQjvu52sL._AC_SY355_.jpg" alt="imagen">
+           <h3 class="parra"> Luz de noche 3D </h3>
+        </div>
+    </div>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/61Qj8NMt9nL._AC_UL320_.jpg" alt="imagen">
+           <h3 class="parra"> Magic lux 3D </h3>
+        </div>
+    </div>
+    
+
+<br>
+    <h2 class="subtitulo1"> FUNKO  A  S/. 59.90 </h2>
+
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://i.linio.com/p/c8292e4584502d72fdcdba29296c50f1-product.jpg" alt="imagen">
+           <h3 class="parra"> Rick </h3>
+        </div>
+    </div>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://falabella.scene7.com/is/image/FalabellaPE/17910101_1" alt="imagen">
+           <h3 class="parra"> Rick king </h3>
+        </div>
+    </div>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://www.techinn.com/f/13806/138068134_2/funko-figura-rick-y-morty-gamer-rick-exclusivo.jpg" alt="imagen">
+           <h3 class="parra"> Rick gamer </h3>
+        </div>
+    </div>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://cdnx.jumpseller.com/ninos-mutantes-yugioh1/image/8269880/resize/1200/1200?1587069673" alt="imagen">
+           <h3 class="parra"> Weaponized Rick </h3>
+        </div>
+    </div>
+
+<br>
+    <h2 class="subtitulo1"> PELUCHES  A  S/. 25.00</h2>
+
+
+    <div class="botones"> 
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/51xjgdhh7tL._AC_SX569_.jpg" alt="imagen">
+           <h3 class="parra"> Galactic Rick </h3>
+        </div>
+    </div>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/51McRa1egxL._AC_SY550_.jpg" alt="imagen">
+           <h3 class="parra"> Standar </h3>
+        </div>
+    </div>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/31iBbE9EO3L._AC_.jpg" alt="imagen">
+           <h3 class="parra"> Galactic Morty </h3>
+        </div>
+    </div>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/81jhJLBx+4L._AC_SY879_.jpg" alt="imagen">
+           <h3 class="parra"> Galactic Felush</h3>
+        </div>
+    </div>
+
+
+
+<br>
+    <h2 class="subtitulo1"> GORRAS  A  S/. 35.00 </h2>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/41Jf7MKS9ZL._AC_UX466_.jpg" alt="imagen">
+           <h3 class="parra"> Beisbol </h3>
+        </div>
+    </div>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/91QWKzFpxiL._AC_SL1500_.jpg" alt="imagen">
+           <h3 class="parra"> Hip Hop </h3>
+        </div>
+    </div>
+
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://images-na.ssl-images-amazon.com/images/I/71G0TqVzdRL._AC_UX679_.jpg" alt="imagen">
+           <h3 class="parra"> Beisbol </h3>
+        </div>
+    </div>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/61ZnbCwKH4L._AC_UL1134_.jpg" alt="imagen">
+           <h3 class="parra"> Casual </h3>
+        </div>
+    </div>
+
+
+    <h2 class="subtitulo1"> CALCETINES  A  S/. 40.00</h2>
+<br>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/71QFHCG6MbL._AC_UX385_.jpg" alt="imagen">
+           <h3 class="parra"> Casual crew </h3>
+        </div>
+    </div>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/71lDRkM-QdL._AC_UX385_.jpg" alt="imagen">
+           <h3 class="parra"> Sublimados </h3>
+        </div>
+    </div>
+
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/71J8yOWPyOL._AC_UY445_.jpg" alt="imagen">
+           <h3 class="parra"> Good luck </h3>
+        </div>
+    </div>
+
+    <div class="botones">
+        <div class="boton">
+           <img src="https://m.media-amazon.com/images/I/81Db2BigybL._AC_UX425_.jpg" alt="imagen">
+           <h3 class="parra"> Run Morty</h3>
+        </div>
+    </div>
+
+
+
+<script src="productosR&M.js"></script>
+
+
+</body>
+</html>

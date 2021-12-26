@@ -1,0 +1,48 @@
+body{
+    background: url(https://www.xtrafondos.com/wallpapers/resized/rick-y-morty-en-el-espacio-6046.jpg?s=large);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    margin: auto;
+    background-size: 150%;
+    animation: movimiento 5s infinite linear alternate;
+    
+}
+@keyframes movimiento{
+    from{
+      background-position:bottom left ;
+    }
+    to{
+        background-position: top right;
+    }
+}
+
+    
+
+h1{
+    text-align: center;
+    color: rgb(12, 247, 12);
+}
+h2{
+    font-size: 500%;
+    text-align: center;
+    font-family: tit;
+    margin: 15px 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+.volver{
+    float: left; 
+}
+.caja1 th{
+    background-color: rgb(236, 240, 39);
+}
+.caja1 h4{
+    background-color: rgb(236, 240, 39);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin-top: 0%;
+}

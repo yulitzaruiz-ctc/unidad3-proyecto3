@@ -1,0 +1,120 @@
+@font-face {
+    font-family: tu;
+    src: url(Hey\ Haters.ttf);
+}
+
+
+
+body{
+    background: url(https://occ-0-4104-3933.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABd4APOu-wZslSJvGJIqvN64RpDC1xpjE-YAW218JH8xFoLkfcuCwkwQPAeK1v9RtSQt_MSrCXoPaRoyxrY9OlE6Hip-f.jpg?r=98e);
+    background-attachment: fixed;
+    background-position: right;
+    margin: auto;
+    background-size: 100%;
+    animation: movimiento 5s infinite linear alternate;
+    font-family: cursive;
+}
+@keyframes movimiento{
+    from{
+      background-position:bottom left ;
+    }
+    to{
+        background-position: top right;
+    }
+}
+.sombra{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(to right,#181818 7%,rgba(23,23,23,.98) 
+    10%,rgba(23,23,23,.97) 15%,rgba(23,23,23,.95) 20%,rgba(23,23,23,.94) 
+    25%,rgba(23,23,23,.92) 30%,rgba(23,23,23,.9) 35%,rgba(23,23,23,.87) 
+    40%,rgba(23,23,23,.82) 45%,rgba(23,23,23,.75) 50%,rgba(23,23,23,.63) 
+    55%,rgba(23,23,23,.45) 60%,rgba(23,23,23,.27) 65%,rgba(23,23,23,.15) 
+    70%,rgba(23,23,23,.08) 75%,rgba(23,23,23,.03) 80%,rgba(23,23,23,0) 
+    85%);
+}
+
+
+img{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    margin-left: 5%;
+}
+
+h1{
+    color: #fff;
+    font-size:200px;
+    font-family: tu;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+nav{
+    /*outline: 1px solid blueviolet;*/
+}
+ul{
+    /*outline: 1px solid blue;*/
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+    background-color: #13130e;
+    line-height: 50px;
+    overflow: auto;
+}
+li{
+    /*outline: 1px solid greenyellow;*/
+    display: inline-block;
+    float: right;
+    padding: 0px 30px;
+    border: 1px white;
+}
+a{
+    /*outline: 1px solid hotpink;*/
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+a:hover {
+    color: rgb(112, 133, 134);
+}
+
+.a2{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    width: 720px;
+}
+
+.a2:hover{
+color: rgb(255, 79, 79);
+}
+
+span{
+    font-family: calibri;
+    font-size: 20px;
+    color: rgb(18, 163, 18);
+}
+p{
+    font-size: 19px;
+    color: white;
+    text-align: justify;
+    font-family: calibri;
+}
+.info{
+    margin-left: 30px;
+    margin-right: 55%;
+    margin-top: 19%;
+}
+
+.rect{
+    border: 1px solid #038819;
+    padding: 0 5px;
+}
+
+
+

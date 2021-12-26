@@ -1,0 +1,25 @@
+body{
+    background: url(https://www.xtrafondos.com/wallpapers/resized/rick-y-morty-peace-among-worlds-6556.jpg?s=large);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    margin: auto;
+    background-size: 150%;
+    animation: movimiento 5s infinite linear alternate;
+    
+}
+@keyframes movimiento{
+    from{
+      background-position:bottom left ;
+    }
+    to{
+        background-position: top right;
+    }
+}
+
+    
+
+h1{
+    text-align: center;
+    color: rgb(12, 247, 12);
+}
